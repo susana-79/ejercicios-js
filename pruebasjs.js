@@ -17,5 +17,8 @@ function multiply(a, b){
 if (Digit < 1 || Digit> 8) {
   alert( 'es falso' );
 }
+function lovefunc(flower1, flower2){
+    return flower1 % 2 !== flower2 % 2;
+  }
 
   
