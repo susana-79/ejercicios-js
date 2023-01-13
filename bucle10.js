@@ -86,12 +86,13 @@ console.log(texto)
 // un programa que le pida números al usuario, los sume, y
 //  acabe cuando el usuario escriba 0 y nos muestre la suma total de los
 // números
-var i = 0
+let nu1 = 0
+
 do {
-    var nu1 = (prompt("Escribe un numero.Escribe 0 para salir"));
-    nu1 = parselnt(nu1);
+    nu1 = (prompt("Escribe un numero.Escribe 0 para salir"));
+    nu1 = Number(nu1)
     console.log(nu1);
     i = i + nu1;
 }
-while(nu1 != 0);
+while (nu1 != 0);
 console.log(i);
