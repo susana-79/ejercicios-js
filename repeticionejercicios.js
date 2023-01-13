@@ -40,21 +40,73 @@ console.log()
 //Hagamos un programa que le pida al usuario un número inicial y una razón
 //y nos muestre todos los términos de esa razón geométrica menores de
 //100.
-function geometrica(inicial,razón,numero){
-    let resultado= inicial
-    for(let i=0;i>=numero;i++){
-        resultado*=razón
-    }return resultado
+function geometrica(inicial, razón, numero) {
+    let resultado = inicial
+    for (let i = 0; i >= numero; i++) {
+        resultado *= razón
+    } return resultado
 }
-console. log(geometrica(2,3,6))
+console.log(geometrica(2, 3, 6))
 //5.- Escribir un programa que calcule la suma de todos 
 //los múltiplos de 5 menores de 100
 
 //6.- Escribir un programa que nos cuente la cantidad
 // de múltiplos de 5 menores de 100
-let contador=0;
-while(contador<100){
-    if(contador%5==0)
-    console.log(contador)
+let contador = 0;
+while (contador < 100) {
+    if (contador % 5 == 0)
+        console.log(contador)
     contador++
-} 
+}
+//7.- Pedimos dos números al usuario y le decimos si los dos tienen la
+//misma paridad (o sea, si los dos son pares o los dos son impares) o
+//diferente.
+
+
+//8.- Escribir un programa que le pida textos al usuario, los imprima por la consola,
+// y acabe cuando el usuario escriba ‘FIN’
+
+
+
+//9.- Escribir un programa que le pida números al usuario, los sume, y
+//acabe cuando el usuario escriba 0 y nos muestre la suma total de los
+//números
+
+let nu1 = 0
+let i=0
+do {
+    nu1 = (prompt("Escribe un numero.Escribe 0 para salir"));
+    nu1 = Number(nu1);
+    console.log(nu1);
+    i = i + nu1;
+
+}
+while (nu1 != 0);
+console.log(i);
+
+//10.- Escribir un programa que nos muestre lo siguiente:
+
+//1
+
+//22
+
+//333
+
+//4444
+
+//55555
+function repetirNumero(numero) {
+    let resultado = ""
+    for (let i = 1; i <= numero; i++) {
+        resultado += numero
+    }
+    return resultado
+}
+function arbolNumerico(numero) {
+    let resultado = ""
+    for (let i = 1; i <= numero; i++) {
+        resultado += repetirNumero(i) + "\r\n"
+    } return resultado
+}
+let arbol = arbolNumerico(5)
+console.log(arbol)
