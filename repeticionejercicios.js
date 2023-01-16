@@ -2,12 +2,9 @@
  let num1 = Number(prompt("dame un numero"))
  let num2 = Number(prompt("dame otro numero"))
  function mayor(num1, num2) {
-        if (num1 > num2) {
-        return num1
-     }
-    else {
-            return num2
-     }
+    let resultado;
+    resultado= num1 > num2 ? num1 : num2;
+    return resultado;
  }
  console.log(mayor(num1, num2))
 //2.- Pedir tres números al usuario y decir cual es el mayor
