@@ -53,11 +53,11 @@ console.log(geometrica(2, 3, 6))
 //5.- Escribir un programa que calcule la suma de todos 
 //los múltiplos de 5 menores de 100
 let contador = 0;
-while (contador < 100) {
-    if (contador % 5 == 0)
-        console.log(contador)
+for (let i = 1; i <= 100; i++) {
+    if (i % 5 == 0) {
+        contador = contador + i
+    }
 
-    contador++
 }
 console.log(contador)
 
