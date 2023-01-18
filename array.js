@@ -27,36 +27,57 @@ for (let i = 1; i <= numeros.length; i++) {
     console.log(numeros[summa])
 }
 
-
-
 //Generar una copia de un array pero con todos los elementos incrementado en 1.
-let array = {
-    numero: 1,
-    numero: 2,
-    numero: 3,
-    numero: 4,
-    numero: 5,
-    numero: 6,
-    cumplir: function () {
-        this.numero++;
-    }
-}
-console.log(array["numero"])
-array.cumplir()
-console.log(array["numero"])
+numeros=[1,2,3,4,5,6];
+const numeroCopia=numeros.slice();
+numeros.push(7)
+console.log(numeroCopia);
+console.log(numeros);
+
+
 //Calcular la media de la suma total de sus elementos 
 numeros = [1, 2, 3, 4, 5, 6];
 let sum = 0;
 
-for (let i = 0; i < numeros.length; i++) {
+for (let i = 0; i %= numeros.length; i++) {
     sum += numeros[i];
 }
 console.log(sum);
 //2. Pediremos a través de un bluce 6 números al usuario que almacenaremos en un array
 //Imprimeros por pantalla la longitud del array, 
 let numbers = [4, 5, 6, 3, 8, 9];
+
 console.log(numbers.length)
+
 //el número más alto y el número más bajo
+function max(m){
+    let a=m.length;
+    maxnum=m[a-1];
+    while(a--){
+        if(m[a]>maxnum){
+            maxnum=m[a]
+        }
+    }
+    return maxnum;
+};
+
+let num = [4, 5, 6, 3, 8, 9];
+let mi= max(num);
+console.log(mi)
+//el número más bajo
+function min(mi){
+    let b=mi.length;
+    minnum= mi[b-1];
+    while(b--){
+    if(mi[b]<minnum){
+        minnum=mi[b]
+    }
+}
+return minnum;
+};
+ num = [4, 5, 6, 3, 8, 9];
+ let ma= min(num);
+ console.log(ma)
 
 
 
@@ -105,15 +126,20 @@ coche = {
     modelo: " ibiza ",
     añoFabricacion: 2020,
     velocidad: 220,
-    arrancado: true,
-    encender: function () {
-        this.arrancado = "arranca o apaga el motor";
+    arrancado: "false",
+    encender () {
+        if (arrancado = true) {
+            this.arrancado = "false";
+        } else {
+            this.arrancado = "true"
+        }
     }
-
 }
-console.log(coche["arrancado"])
 coche.encender()
-console.log(coche["arrancado"])
+console.log(coche)
+
+
+
 //2. Crearemos un objeto persona que tendra las siguientes propiedades:
 //nombre (String),
 //2 apellidos (Array),
