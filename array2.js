@@ -39,8 +39,12 @@ console.log(array4);
 //5. Pedimos al usuario 5 valores que guardaremos en un array,
 // después extraeremos el primer elemento y lo mostraremos al usuario.
 
-
-let array5 = [parseInt(prompt('Introduce 5 valores '))];
+let array5 = [];
+for (let i = 0; i < 5; i++) {
+    let valor = (prompt("Escriba un valor:"));
+    array5.push(valor);
+    console.log(array5)
+}
 const extraer = array5.shift()
 console.log(extraer)
 
@@ -49,10 +53,18 @@ console.log(extraer)
 // el programa debe determinar si ambos conjuntos tienen
 //la misma cantidad de números.
 
-let array6 = [parseInt(prompt('Ingresa dos conjuntos de números separados por coma '))];
-const encuentra = array6.includes(array6)
-console.log(encuentra)
-console.log(array6)
+let array6 = prompt('Ingresa dos conjuntos de números separados por coma ').split(",");
+let arra6 = prompt('Ingresa dos conjuntos de números separados por coma ').split(",");
+
+if (array6.length===arra6.length){
+    console.log("Los conjuntos son iguales")
+    
+}else{
+    console.log("Los conjuntos no son iguales")
+}
+
+
+
 
 //7. El usuario ingresa dos conjuntos de números separados por coma,
 // si ambos conjuntos tienen la misma cantidad de elementos
@@ -60,12 +72,25 @@ console.log(array6)
 // (Ejemplo: [1,2,3] + [2,3,4] = [3,5,7])
 
 
-let array7 = [parseInt(prompt('Ingresar numeros '))];
-let arr7 = [parseInt(prompt('Ingresar numeros '))];
-let arra7=[...array7,...arr7];
-array7.length==arr7.length && array7.every(function(v,i) 
-{ return v === arr7[i] } );
-console.log(arra7)
+let array7 = prompt('Ingresar numeros separados por coma ').split(",");
+let arr7 = prompt('Ingresar numeros separados por coma ').split(",");
+
+console.log("array7", array7)
+console.log("arr7", arr7)
+if( array7.length===arr7.length){
+
+    let sumaValores=[];
+    for( let i=0; i<array7.length;i++){
+        sumaValores.push(Number(array7[i]) + Number(arr7[i])); 
+        
+    }
+    
+   
+    console.log("sumaValores",sumaValores)
+}else{
+    console.log("el resultado no es igual no se puede sumar")
+}
+
 
 
 
