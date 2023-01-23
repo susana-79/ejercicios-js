@@ -63,13 +63,25 @@ console.log(contador)
 
 //6.- Escribir un programa que nos cuente la cantidad
 // de múltiplos de 5 menores de 100
-let inicial = 1
-let multiplo = 5
-let serie = inicial * multiplo
-while (serie < 100) {
-    console.log(serie)
-    serie *= multiplo
+
+let multiplo = 0;
+for (let i = 5; i <100; i += 5) {
+    multiplo++;
 }
+console.log(multiplo)
+
+//6.1 Escribir un programa que le pida al usuario
+//un numero nos cuente la cantidad de divisores de ese número
+//menores de 100
+
+let numer=Number(prompt("Introduce un numero"));
+let cuenta=0;
+for (let i= 1; i>=100; i++){
+    if(numer% i ===0){
+        cuenta++;
+    }
+}
+console.log("el numero"+" "  +numer+ " " + "tiene" + " " + cuenta +" " + "divisores menores de 100");
 
 //7.- Pedimos dos números al usuario y le decimos si los dos tienen la
 //misma paridad (o sea, si los dos son pares o los dos son impares) o

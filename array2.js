@@ -22,12 +22,9 @@ console.log(arra3)
 //3. Crear una función que reciba un array y devuelva otro ordenado.
 // La función tendrá dos parámetros el array que recibe
 //y otro parámetro para determinar orden del array devuelto.
+const ordenar=(array,orden)=>orden?array.sort():array.sort().reverse();
+console.log(ordenar([2,3,1,5,6],true))
 
-let numbers = [4, 2, 5, 1, 3];
-numbers.sort(function (a, b) {
-    return a - b;
-});
-console.log(numbers);
 
 //4. Dado el array [1,2,3,4,5,6,7,8,9] volcar 
 //los 3 últimos elementos en otro array.
